@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Info</title>
+    <link rel="icon" type="image.jpg" href="favicon.jpg">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <h2>Información sobre el producto</h2>
+
+    <form action="maneja_formulario.php" method="post">
+        <fieldset>
+            <legend>Datos básicos</legend>
+
+            <label for="Nombre">Nombre</label> <br/>
+            <input type="text" name="Nombre" value="" />
+            <br/>
+            <br/>
+
+            <label for="Descripción">Descripción</label> <br/>
+            <textarea id="Descripción" name="Descripción"></textarea>
+
+            <br/>
+
+            <label for="Foto">Foto</label> <br/>
+            <input type="archivo" name="archivo" /> <br/> <br/>
+            <input name="contador" type="checkbox" value="si" /> Añadir contador de visitas
+        </fieldset>
+
+
+
+               
+        <fieldset>
+            <legend>Datos económicos</legend>
+            
+            <label for="Precio">Precio</label>
+            <input type="text" size="8" id="Precio" name="Precio" />
+            <label for="Impuestos">Impuestos</label>
+            <select id="Impuestos" name="Impuestos">
+                <option value="2">4%</option>
+                <option value="4">7%</option>
+                <option value="6">16%</option>
+                <option value="8">25%</option>
+            </select> <br/> <br/>
+
+            <label>Promoción</label> <br/>
+                <input type="radio" name="Promoción" value="Ninguno" checked="checked" /> Ninguno <br/>
+                <input type="radio" name="Promoción" value="Transporte" /> Transporte gratuito <br/>
+                <input type="radio" name="Promoción" value="Descuento" /> Descuento 5%
+        </fieldset>
+    </form>
+
+</body>
+</html>
